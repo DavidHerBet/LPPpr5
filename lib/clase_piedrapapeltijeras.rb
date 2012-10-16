@@ -6,7 +6,10 @@ class JugarPiedraPapelTijeras
     
     @derrotado_por = {:piedra => :tijeras, :papel => :piedra, :tijeras => :papel}
     @jugadas = @derrotado_por.keys
-    @jugada_jugador = jugada
+    
+    # Comprobamos que jugada sea un string, porque no existe metodo .to_sym para convertir numeros
+    raise "Debes introducir una jugada valida: #{@jugadas.join(', ')}" unless (jugada.class == String)
+    @jugada_jugador = jugada.to_sym
     
     # Comprobamos que la selección del jugador sea correcta
     raise "Debes introducir una jugada valida: #{@jugadas.join(', ')}" unless @jugadas.include? @jugada_jugador
