@@ -11,8 +11,7 @@ task :test do
 end
 
 desc 'Ejecuta una test concreto especificando su nombre'
-task :t, :nombre_test do |t, test_name|
-  #test_name = args[:test_name]
-  nombre_test = test_name[:nombre_test]
+task :t, :nombre_test do |t, nombre|
+  nombre_test = nombre[:nombre_test]
   sh "ruby -w test/tc_clase_piedrapapeltijeras.rb --name #{nombre_test}"
 end
