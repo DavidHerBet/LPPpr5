@@ -1,6 +1,6 @@
 # Fichero: piedrapapeltijeras.rb
 
-require "/home/alu4078/LPP/pr5/lib/clase_piedrapapeltijeras"
+require "clase_piedrapapeltijeras"
 
 jugada = (ARGV.shift || '')
 

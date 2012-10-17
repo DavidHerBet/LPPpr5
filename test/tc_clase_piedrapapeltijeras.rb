@@ -1,6 +1,6 @@
 # Fichero: tc_clase_piedrapapeltijeras.rb
 
-require "/home/alu4078/LPP/pr5/lib/clase_piedrapapeltijeras"
+require "clase_piedrapapeltijeras"
 require "test/unit"
 
 class TestJugarPiedraPapelTijeras < Test::Unit::TestCase
