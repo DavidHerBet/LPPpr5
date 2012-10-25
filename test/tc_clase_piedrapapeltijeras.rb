@@ -37,4 +37,13 @@ class TestJugarPiedraPapelTijeras < Test::Unit::TestCase
     end
   end
   
+  def test_respuesta_ordenador
+    resp_ord = []
+    30.times do
+      @jppt.jugar('piedra')
+      resp_ord << @jppt.jugada_ordenador
+    end
+    assert (resp_ord.uniq.length >= 3)
+  end
+  
 end
