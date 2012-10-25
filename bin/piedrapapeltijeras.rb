@@ -4,4 +4,8 @@ require "clase_piedrapapeltijeras"
 
 jugada = (ARGV.shift || '')
 
-juego = JugarPiedraPapelTijeras.new(jugada)
+juego = JugarPiedraPapelTijeras.new
+
+juego.jugar(jugada)
+
+juego.mostrar_resultados
